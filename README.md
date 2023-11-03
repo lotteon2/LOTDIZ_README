@@ -49,6 +49,7 @@ https://lotdiz.lotteedu.com/
 ![mindmap](https://github.com/lotteon2/LOTDIZ_README/assets/66711073/d67dbd1a-476c-4725-b348-37bf654000c8)
 
  <br/>
+ 
 **✔️ 주제 선정 이유 및 기획 의도**
 
 온라인 쇼핑몰 웹사이트 제작을 위해 이커머스와 유사한 경매 서비스와 티켓팅, 공동구매를 떠올리게 되었습니다.
