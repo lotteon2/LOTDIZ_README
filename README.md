@@ -48,7 +48,7 @@ https://lotdiz.lotteedu.com/
 
 ![mindmap](https://github.com/lotteon2/LOTDIZ_README/assets/66711073/d67dbd1a-476c-4725-b348-37bf654000c8)
 
-
+ <br/>
 **✔️ 주제 선정 이유 및 기획 의도**
 
 온라인 쇼핑몰 웹사이트 제작을 위해 이커머스와 유사한 경매 서비스와 티켓팅, 공동구매를 떠올리게 되었습니다.
@@ -57,6 +57,8 @@ https://lotdiz.lotteedu.com/
 
 투자와 펀딩에서 다양한 기술을 경험할 수 있다는 점에서 펀딩 플랫폼을 선정하게 되었습니다.
 
+ <br/>
+ 
 **✔️ 주요 기능**
 
 🛒 **메인 기능**
@@ -83,6 +85,8 @@ https://lotdiz.lotteedu.com/
     - 프로젝트 마감 알림 / 목표 펀딩금액 미달성 알림
     - 배송 시작 알림
 
+<br/>
+ 
 **🙋‍♀️ Maker  전용 기능**
 
 - **프로젝트 개설**
@@ -95,6 +99,8 @@ https://lotdiz.lotteedu.com/
     - 목표 펀딩 금액 달성 알림
     - 프로젝트 마감 알림 / 목표 펀딩금액 미달성 알림
 
+ <br/>
+ 
 **🧑‍💼 Back Office**
 
 - 회원, 메이커, 프로젝트 조회 및 검색
@@ -108,18 +114,26 @@ https://lotdiz.lotteedu.com/
 
 ![기술스택](https://github.com/lotteon2/LOTDIZ_README/assets/66711073/8a7d994a-4864-42a1-82ff-f5034ec6e6fa)
 
+<br/>
+ 
 ✔️ **USE CASE**
 
 ![Untitled (1)](https://github.com/lotteon2/LOTDIZ_README/assets/66711073/d8b23333-6211-4ad3-a73a-be7ba7d13b04)
-
+ 
+ <br/>
+ 
 **✔️ 와이어 프레임**
 
 https://www.figma.com/file/d8jErJg73JWxxqms1BYZ2F/%EB%A1%AF%EB%94%94%EC%A6%88?type=design&node-id=1158-14&mode=design&t=TV939ndKw3PjmX8l-0
 
+ <br/>
+ 
 **✔️ ERD**
 
 ![LOTDIZ (1)](https://github.com/lotteon2/LOTDIZ_README/assets/66711073/9e836edd-a879-4579-96e9-8d6c8ddf41ef)
-
+ 
+ <br/>
+ 
 ✔️ **아키텍처**
 
 ![Untitled (2)](https://github.com/lotteon2/LOTDIZ_README/assets/66711073/9d832695-a5b0-49f5-906d-aff818c864f6)
@@ -144,7 +158,9 @@ https://www.figma.com/file/d8jErJg73JWxxqms1BYZ2F/%EB%A1%AF%EB%94%94%EC%A6%88?ty
     - 포스트맨
 4. **스케줄 달력**
     - 일정, 공지, 업무 마감일을 스케줄 달력에 기록하여 전체 프로젝트 일정을 관리하였습니다.
-
+ 
+ <br/>
+ 
 **✔️ 개발 및 기술 구현 결과**
 
 - **회원**
@@ -176,7 +192,8 @@ https://www.figma.com/file/d8jErJg73JWxxqms1BYZ2F/%EB%A1%AF%EB%94%94%EC%A6%88?ty
         
         넣고, 트랜잭션 처리하여 결제처리를 완료딩
         
-        
+ <br/>
+  
 **✔️ 회고**
 
 | 이상원 | - |
