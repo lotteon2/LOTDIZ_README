@@ -18,7 +18,7 @@ https://lotdiz.lotteedu.com/
 
 **✔️ 관리자 페이지 url** 
 
-[https://lotdiz.lotteedu.com/](https://admin.lotdiz.lotteedu.com/)
+[https://admin.lotdiz.lotteedu.com/](https://admin.lotdiz.lotteedu.com/)
 
 **✔️ 프로젝트 설명**
 
