@@ -69,6 +69,7 @@ https://lotdiz.lotteedu.com/
 **✔️ 주요 기능**
 
 🛒 **메인 기능**
+![](https://github.com/lotteon2/LOTDIZ_README/assets/55802893/4a6ecfa3-f7df-4097-a20b-14b7a63c9b79)
 
 - **회원**
     - 회원 가입, 로그인, 로그아웃, 개인 정보 조회 및 수정
