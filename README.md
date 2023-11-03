@@ -46,15 +46,12 @@ https://lotdiz.lotteedu.com/
 
 ⇒ 마인드 맵을 통해 기획
 
-![mindmap.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7346ae24-27d2-4d8b-aa18-9f1e5597bcff/38a21546-6fa1-483e-9620-d2a126febc38/mindmap.png)
+![mindmap](https://github.com/lotteon2/LOTDIZ_README/assets/66711073/d67dbd1a-476c-4725-b348-37bf654000c8)
 
-[EdrawMind Online](https://www.edrawmind.com/app/editor/ZN5fVRc8CKxeD0UPKVv6nzcRPKG66WpG)
 
 **✔️ 주제 선정 이유 및 기획 의도**
 
-온라인 쇼핑몰 웹사이트 제작을 위해
-
-이커머스와 유사한 경매 서비스와 티켓팅, 공동구매를 떠올리게 되었습니다.
+온라인 쇼핑몰 웹사이트 제작을 위해 이커머스와 유사한 경매 서비스와 티켓팅, 공동구매를 떠올리게 되었습니다.
 
 동시성 처리와 트래픽을 고려해 티켓팅과 공동구매에서 많은 아이디어가 나왔습니다.
 
@@ -109,11 +106,11 @@ https://lotdiz.lotteedu.com/
 
 **✔️ 개발 스택**
 
-![기술스택.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7346ae24-27d2-4d8b-aa18-9f1e5597bcff/9fa23135-d56f-40d3-8a41-4cec8969e893/%EA%B8%B0%EC%88%A0%EC%8A%A4%ED%83%9D.png)
+![기술스택](https://github.com/lotteon2/LOTDIZ_README/assets/66711073/8a7d994a-4864-42a1-82ff-f5034ec6e6fa)
 
 ✔️ **USE CASE**
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7346ae24-27d2-4d8b-aa18-9f1e5597bcff/c0a13562-f8fb-45e3-b8d6-d1736c25986f/Untitled.png)
+![Untitled (1)](https://github.com/lotteon2/LOTDIZ_README/assets/66711073/d8b23333-6211-4ad3-a73a-be7ba7d13b04)
 
 **✔️ 와이어 프레임**
 
@@ -121,11 +118,11 @@ https://www.figma.com/file/d8jErJg73JWxxqms1BYZ2F/%EB%A1%AF%EB%94%94%EC%A6%88?ty
 
 **✔️ ERD**
 
-![LOTDIZ.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7346ae24-27d2-4d8b-aa18-9f1e5597bcff/ad185103-18f4-4c3c-8add-981f1c7cbb0b/LOTDIZ.png)
+![LOTDIZ (1)](https://github.com/lotteon2/LOTDIZ_README/assets/66711073/9e836edd-a879-4579-96e9-8d6c8ddf41ef)
 
 ✔️ **아키텍처**
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7346ae24-27d2-4d8b-aa18-9f1e5597bcff/d946aa55-764d-4d84-bbbd-b1ed1e780c67/Untitled.png)
+![Untitled (2)](https://github.com/lotteon2/LOTDIZ_README/assets/66711073/9d832695-a5b0-49f5-906d-aff818c864f6)
 
 
 ## 04. 프로젝트 수행 내용
@@ -179,11 +176,12 @@ https://www.figma.com/file/d8jErJg73JWxxqms1BYZ2F/%EB%A1%AF%EB%94%94%EC%A6%88?ty
         
         넣고, 트랜잭션 처리하여 결제처리를 완료딩
         
-
-- 펀딩
-    - 펀딩하기
         
-        로그인한 사용자는 펀딩하기 버튼을 통해 원하는 프로젝트의 상품을 펀딩할 수 있다. 
-        
-
 **✔️ 회고**
+
+| 이상원 | - |
+| --- | --- |
+| 이우엽 | - |
+| 이진우 | - |
+| 이채민 | - |
+| 최소영 | - |
