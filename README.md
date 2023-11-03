@@ -196,8 +196,9 @@ https://www.figma.com/file/d8jErJg73JWxxqms1BYZ2F/%EB%A1%AF%EB%94%94%EC%A6%88?ty
   
 **✔️ 회고**
 
-| 이상원 | - |
+| 이름 | 내용 |
 | --- | --- |
+| 이상원 | - |
 | 이우엽 | - |
 | 이진우 | - |
 | 이채민 | - |
