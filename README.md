@@ -26,6 +26,12 @@ https://lotdiz.lotteedu.com/
 
 중개하는 온라인 중개 플랫폼입니다. 
 
+**✔️ 기술 스택**
+
+![기술스택](https://github.com/lotteon2/LOTDIZ_README/assets/66711073/8a7d994a-4864-42a1-82ff-f5034ec6e6fa)
+
+<br/>
+
 
 ## 01. 팀 소개
 
@@ -111,11 +117,6 @@ https://lotdiz.lotteedu.com/
 
 ## 03. 프로젝트 설계
 
-**✔️ 개발 스택**
-
-![기술스택](https://github.com/lotteon2/LOTDIZ_README/assets/66711073/8a7d994a-4864-42a1-82ff-f5034ec6e6fa)
-
-<br/>
  
 ✔️ **USE CASE**
 
