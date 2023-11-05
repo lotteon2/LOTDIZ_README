@@ -41,7 +41,7 @@ https://lotdiz.lotteedu.com/
 | --- | --- | --- | --- |
 | 이상원 | Leader <br/> Back <br/> Front <br/> Infra | **Project Service** <br/> - 프로젝트 등록하기 <br/> **Notification Service** <br/> - 배송 시작 알림, 목표 금액 달성 알림 <br/> - event-bridge와 sqs를 이용한 주기적 알림 구성  | https://github.com/nowgnas |
 | 이우엽 | Back <br/> Front | **Member Service** <br/> - 회원가입 및 이메일 인증, 로그인 (인증, JWT 토큰 발급), 로그아웃 <br/> - 마이페이지 (서포터 활동 내역 + 회원 정보 조회 및 수정) <br/> - 찜 조회, 삭제 <br/> **APIGateway Service** <br/> - JWT를 통한 인가 로직 구현 <br/> **Payments Service** <br/> - 멤버십 가입 (단건 결제) | https://github.com/leewooyup |
-| 이진우 | Back <br/> Front | **Funding Service** <br/> - 펀딩 결제 <br/> - 펀딩 내역 조회 <br/> - 펀딩 상세 내역 조회 | https://github.com/binarywoo27 |
+| 이진우 | Back <br/> Front | **Funding Service** <br/> - 펀딩하기 <br/> - 펀딩 내역 조회 <br/> - 펀딩 상세 내역 조회 **Payment Service** <br/> - 펀딩 결제 (단건 결제) | https://github.com/binarywoo27 |
 | 이채민 | Back <br/> Front <br/> Infra | **Admin Service** <br/> - 회원 정보 조회, 메이커 정보 조회 <br/> - 프로젝트 정보 조회 및 프로젝트 인증  <br/> - 각 정보 통합 검색 <br/> **Delivery Service** <br/> - 배송 조회 <br/> **Notification Service** <br/> - 알림 조회, 프로젝트 마감 및 프로젝트 미달성 알림 <br/> **Infrastructure** <br/> - MicroService 별, 개별 컨테이너 환경 AWS Fargate EKS를 사용하여 구축 → 운영과 관리의 편리함을 고려하여 Serverless 환경 도입 <br/> - MicroService 단위의 DB 독립적으로 구축 → 하나의 Pod에 App과 DB를 두어 생명주기를 함께하도록 구성 <br/> - AWS EFS & Kubernetes Persistent Volume 및 Claim을 사용한 DB 정보 독립적으로 영구 저장환경 구축 <br/> - Kubernetes Rolling Update 전략으로 Pod 재배포시 Service의 Downtime을 제거 <br/> - AWS NLB를 사용하여 Spring Cloud API Gateway의 엔드포인트를 외부로 노출 <br/> - AWS Route 53 + AWS Certificate Manager + AWS NLB를 연결해 DNS → Load Balancer로 라우팅 <br/> - EventBridge + SQS를 사용한 이벤트 스케줄러 구축 <br/> - SNS + SQS를 사용한 이벤트 기반 Pub/Sub 환경 구축 <br/> - Cloudfront + S3 웹 퍼블리싱 기능을 사용하여 Vue App 구축 <br/> - Github Actions Workflows를 사용하여 각 마이크로서비스 및 프론트엔드 CI/CD 구축 <br/> - 각 마이크로서비스 로깅을 위한 CloudWatch와 연동후 로그 모니터링 | https://github.com/CokeLee777 |
 | 최소영 | Back <br/> Front | **Project Service** <br/> - 메인 페이지 (배너, 베스트 롯딜, 마감임박순 롯드+) <br/> - 프로젝트 리스트 조회 (롯드+, 롯딜, 기획전 조회, 좋아요 생성/삭제) <br/> - 프로젝트 리스트 상세 조회 (상세 정보, 지지서명, 함께 하는 서포터, 좋아요 생성/삭제) <br/> - 지지서명 작성, 수정 | https://github.com/cso6005 |
 
@@ -213,9 +213,10 @@ https://www.figma.com/file/d8jErJg73JWxxqms1BYZ2F/%EB%A1%AF%EB%94%94%EC%A6%88?ty
    - 로그인한 사용자는 펀딩하기 버튼을 통해 원하는 프로젝트의 상품을 펀딩할 수 있다.  
      선택한 상품을 카카오페이 API(단건 결제)를 통해 구매를 진행한다.  
      펀딩하기 버튼을 클릭하면 백엔드 서버에서 카카오페이 API를 통해 결제 준비 요청을 보내고 QR코드가 담긴 redirect_url 주소와 tid를 전달받게 된다.  
-     사용자에게 redirect_url과 tid를 반환하여 사용자에게 QR코드를 띄워준다. 사용자는 핸드폰으로 QR를 찍어 결제를 진행하고 서버는 이를 받아 데이터 정합성을 맞추기 위한 다음 작업을 수행한다.  
-     funding-service 백엔드 서버에서 재고차감을 위해 project-service에서 확인 후 재고가 있다면, 카카오서버로 최종적으로 결제 승인 요청을 보낸다.  
-     이후 포인트 차감을 위해 member-service 에 요청을 보내고 상품 배송 정보를 kafka를 통해 delivery-service로 전달하게 된다.  
+     사용자에게 redirect_url과 tid를 반환하여 사용자에게 QR코드를 띄워준다. 사용자는 핸드폰으로 QR를 찍어 결제를 진행하면 카카오에서 프론트로 approval_url주소로 redirect하여 결제 승인을 진행한다. 이때 url을 통해 받은 pg_token을
+     tid, 펀딩정보(펀딩 상세, 결제, 배송정보)와 함께 Funding-Service로 보내 최종적으로 마이크로서비스간 데이터 정합성을 맞추고 카카오 결제 승인을 위한 다음 작업을 수행한다.  
+     Funding-Service 백엔드 서버에서 재고차감을 위해 Project-Service에서 확인 후(feign client) 재고가 있다면, 카카오서버로 최종적으로 결제 승인 요청을 보낸다.  
+     이후 포인트 차감을 위해 Member-Service 에 요청을 보내고 상품 배송 정보를 kafka를 통해 Delivery-Service로 전달하게 된다.  
           
  <br/>
   
